@@ -56,31 +56,31 @@ update: (output, domEl) ->
 
 
 style: """
-	top: #{@style.position.top}
-	bottom: #{@style.position.bottom}
-	right: #{@style.position.right}
-	left: #{@style.position.left}
-	width: #{@style.width}
-	font-family: #{@style.font}
-	color: #{@style.font_color}
-	font-weight: #{@style.font_weight}
-	text-align: #{@style.text_align}
-	text-transform: #{@style.text_transform}
-	font-size: #{@style.font_size}
-	letter-spacing: #{@style.letter_spacing}
+	top: #{style.position.top}
+	bottom: #{style.position.bottom}
+	right: #{style.position.right}
+	left: #{style.position.left}
+	width: #{style.width}
+	font-family: #{style.font}
+	color: #{style.font_color}
+	font-weight: #{style.font_weight}
+	text-align: #{style.text_align}
+	text-transform: #{style.text_transform}
+	font-size: #{style.font_size}
+	letter-spacing: #{style.letter_spacing}
 	font-smoothing: antialiased
-	text-shadow: #{@style.shadow.x_offset} #{@style.shadow.y_offset} #{@style.shadow.blur} #{@style.shadow.color}
-	line-height: #{@style.line_height}
+	text-shadow: #{style.shadow.x_offset} #{style.shadow.y_offset} #{style.shadow.blur} #{style.shadow.color}
+	line-height: #{style.line_height}
 
 	.icon-mouse
-		background: url('#{@style.icon_mouse.png}')
-		-webkit-filter: drop-shadow(#{@style.shadow.x_offset} #{@style.shadow.y_offset} #{@style.shadow.blur} #{@style.shadow.color})
-		filter: drop-shadow(#{@style.shadow.x_offset} #{@style.shadow.y_offset} #{@style.shadow.blur} #{@style.shadow.color})
+		background: url('#{style.icon_mouse.png}')
+		-webkit-filter: drop-shadow(#{style.shadow.x_offset} #{style.shadow.y_offset} #{style.shadow.blur} #{style.shadow.color})
+		filter: drop-shadow(#{style.shadow.x_offset} #{style.shadow.y_offset} #{style.shadow.blur} #{style.shadow.color})
 
 	.icon-keyboard
-		background: url('#{@style.icon_keyboard.png}')
-		-webkit-filter: drop-shadow(#{@style.shadow.x_offset} #{@style.shadow.y_offset} #{@style.shadow.blur} #{@style.shadow.color})
-		filter: drop-shadow(#{@style.shadow.x_offset} #{@style.shadow.y_offset} #{@style.shadow.blur} #{@style.shadow.color})
+		background: url('#{style.icon_keyboard.png}')
+		-webkit-filter: drop-shadow(#{style.shadow.x_offset} #{style.shadow.y_offset} #{style.shadow.blur} #{style.shadow.color})
+		filter: drop-shadow(#{style.shadow.x_offset} #{style.shadow.y_offset} #{style.shadow.blur} #{style.shadow.color})
 
 	.disabled
 		zoom: 1
