@@ -28,7 +28,7 @@ style =
 	icon_keyboard:
 		png: "devicebatt.widget/PNG/keyboard-2-32.png"
 
-command: "system_profiler SPBluetoothDataType | grep -E 'Battery|Minor Type' | sed 's/Minor Type://g' | sed 's/Battery Level://g' |sed 's/Unknown//g' |sed -e 's/^[ \t]*//' | paste -d' ' - -"
+command: "system_profiler SPBluetoothDataType 2> /dev/null | grep -E 'Battery|Minor Type' | sed 's/Minor Type://g' | sed 's/Battery Level://g' |sed 's/Unknown//g' |sed -e 's/^[ \t]*//' | paste -d' ' - -"
 
 refreshFrequency: (1000 * 3)
 
